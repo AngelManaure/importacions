@@ -1,0 +1,207 @@
+.icon {
+    font-size: 2.7rem;
+    color: rgba(68, 68, 68, 0.85);
+    transition: all .5s;
+}
+
+.item__ws:hover {
+    color: rgb(43, 221, 43);
+}
+
+.item__fc:hover {
+    color: rgb(34, 125, 228);
+}
+
+.item__in:hover {
+    color: rgb(243, 82, 109);
+}
+
+.item__em:hover {
+    color: rgb(187, 52, 52);
+}
+
+.diseno {
+    margin-top: 2rem;
+}
+
+.diseno a {
+    color: rgb(43, 42, 42);
+    transition: all .4s;
+}
+
+.diseno a:hover {
+    color: rgb(206, 206, 87);
+}
+
+@media screen and (min-width: 280px) {
+    .about__container {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem .5rem;
+        margin-top: 5rem;
+        text-align: center;
+    }
+    .about__title {
+        font-size: 1.4rem;
+        margin: 1.6rem auto;
+    }
+
+    .img__about {
+        margin: 2rem 2rem;
+    }
+
+    .img__about img {
+        border-radius: 8px;
+    }
+
+    .fundacion img {
+        margin: .55rem 1.4rem;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    .about__container {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem 2.5rem;
+        margin-top: 5rem;
+        text-align: center;
+    }
+
+    .about__title {
+        font-size: 1.4rem;
+        margin: 1.6rem auto;
+    }
+
+    .img__about {
+        margin: 2rem 2rem;
+    }
+
+    .img__about img {
+        border-radius: 8px;
+    }
+
+    .fundacion img {
+        margin: .55rem 2rem;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .about__container {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem 2.5rem;
+        margin-top: 5rem;
+        text-align: center;
+    }
+
+    .about__title {
+        font-size: 2rem;
+        margin: 1.6rem auto;
+    }
+
+    .img__about {
+        margin: 1rem 5rem;
+    }
+
+    .img__about img {
+        border-radius: 8px;
+    }
+
+    .fundacion p {
+        margin: 1rem auto;
+    }
+
+    .cede__text {
+        margin: auto 3rem;
+    }
+
+    .fundacion img {
+        width: 13rem;
+        height: 13rem;
+        margin: .55rem 3rem;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (min-width: 412px) {
+    .fundacion .fund {
+        width: 12rem;
+        height: 12rem;
+        margin: .3rem 4.3rem;
+    }
+}
+
+@media screen and (min-width: 540px) {
+    .img__about {
+        display: flex;
+        justify-content: center;
+        margin: .3rem .3rem;
+    }
+
+    .fund__img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .fundacion {
+        margin: .3rem .3rem;
+        flex-direction: column;
+    }
+
+    .fundacion .fund {
+        margin: 1rem 10rem;
+    }
+
+    .img__about img {
+        margin: 1rem 2rem;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .img__about {
+        display: flex;
+        justify-content: center;
+        margin: .3rem .3rem;
+    }
+
+    .img__about img {
+        width: 20rem;
+    }
+
+    .fundacion .fund {
+        width: 17rem;
+        height: 17rem;
+        margin: 1rem 12.4rem;
+    }
+}
+
+@media screen and (min-width: 820px) {
+    .fundacion .fund {
+        width: 17rem;
+        height: 17rem;
+        margin: 1rem 13.7rem;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .fundacion .fund {
+        width: 17rem;
+        height: 17rem;
+        margin: 1rem 20.1rem;
+    }
+}
+
+@media screen and (min-width: 1228px) {
+    .fundacion .fund {
+        width: 17rem;
+        height: 17rem;
+        margin: 1rem 28.1rem;
+    }
+}
+
+

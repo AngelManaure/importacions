@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>administración</title>
+    <%- include('../../partials/admin/head.admin.ejs'); %>
+</head>
+<body>
+    <%- include('../../partials/admin/header.admin.ejs'); %>
+ <div class="client__container">
+   <div class="client__form2">
+    <form action="/update/<%= data.id %>" method="post">
+        <div class="form__group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" value="<%= data.nombre %>" name="nombre">
+        </div>
+
+        <div class="form__group">
+            <label for="correo">Correo:</label>
+            <input type="email" value="<%= data.correo %>" name="correo">
+        </div>
+
+        <div class="form__group">
+            <label for="whatsapp">Número:</label>
+            <input type="text" value="<%= data.whatsapp %>" name="whatsapp">
+        </div>
+
+        <div class="form__group">
+            <label for="pedido">Producto:</label>
+            <input type="text" value="<%= data.pedido %>" name="pedido">
+        </div>
+        <button type="submit">Actualizar</button>
+    </form>
+</div>
+</div>
+
+
+    <%- include('../../partials/admin/footer.admin.ejs'); %>
+</body>
+</html>

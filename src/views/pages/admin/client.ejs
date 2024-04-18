@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <%- include('../../partials/admin/head.admin.ejs'); %>
+</head>
+<body>
+    <%- include('../../partials/admin/header.admin.ejs'); %>
+
+
+            <div class="table__container">
+
+                <div class="data__container">
+
+                            <% if (data) { %>
+                               <% for (var i = 0; i < data.length; i++) { %>
+                                    <p>N <%= (i + 1) %></p>
+                                    <p>Nombre: <%= data[i].nombre %></p>
+                                    <p>Correo: <%= data[i].correo %></p>
+                                    <p>Teléfono: <%= data[i].whatsapp %></p>
+                                    <p>Producto: <%= data[i].pedido %></p>
+                                        <a href="/delete/<%= data[i].id %>">
+                                            <i class="ri-delete-bin-line"></i>
+                                        </a>
+                                        <a href="/update/<%= data[i].id %>">
+                                            <i class="ri-refresh-line"></i>
+                                        </a>
+                            <% } %>
+                            <% } %>
+
+                </div>
+                <div class="client__form">
+                    <form action="/add" method="post">
+                        <div class="form__group">
+                            <label for="name">Nombre:</label>
+                            <input type="text" name="name">
+                        </div>
+        
+                        <div class="form__group">
+                            <label for="email">Correo:</label>
+                            <input type="email" name="email">
+                        </div>
+        
+                        <div class="form__group">
+                            <label for="number">Número:</label>
+                            <input type="text" name="number">
+                        </div>
+
+                        <div class="form__group">
+                            <label for="pedido">Producto:</label>
+                            <input type="text" name="pedido">
+                        </div>
+                        <button type="submit">Agregar</button>
+                    </form>
+                    <p>
+                        Con los iconos puedes eliminar o actualizar
+                        los documentos.
+                    </p>
+                </div>
+            </div>
+
+    <%- include('../../partials/admin/footer.admin.ejs'); %>
+</body>
+</html>

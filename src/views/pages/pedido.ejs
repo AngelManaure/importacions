@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar pedido</title>
+    <%- include('../partials/head'); %>
+    <link rel="stylesheet" href="/css/pedidos.css">
+</head>
+<body class="flex__container">
+    <%- include('../partials/header'); %>
+            <div class="pedido">
+                <h3 class="pedido__title">Rellena los campos a continuación</h3>
+                <form action="/pedido" method="post" class="pedido__form">
+                    <div class="pedido__group">
+                        <label for="producto" class="pedido__label">Producto:</label>
+                        <input type="text" name="producto" id="producto" required>
+                        <label for="cantidad" class="pedido__label">Cantidad:</label>
+                        <input type="text" name="cantidad" id="cantidad" required>
+                        <label for="direccion" class="pedido__label">Dirección:</label>
+                        <input type="text" name="direccion" id="direccion" required>
+                    </div>
+                    <div class="pedido__group">
+                        <label for="email" class="pedido__label">Correo:</label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="name" class="pedido__label">Nombre completo:</label>
+                        <input type="text" name="name" id="name" required>
+                        <label for="number" class="pedido__label">Número de teléfono:</label>
+                        <input type="text" name="number" id="number" required>
+                    </div>
+                    <button type="submit" class="pedido__button">Realizar pedido</button>
+            </form>
+            <p>Contacta con uno de nuestros administradores después de realizar tu pedido en la sección de <a href="/contact">Contactar</a></p>
+        <%- include('../partials/footer'); %>
+            </div>
+</body>
+</html>

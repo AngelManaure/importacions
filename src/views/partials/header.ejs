@@ -1,0 +1,78 @@
+<header class="header" id="header">
+    <nav class="nav container">
+        <a href="/" class="nav__logo">
+            <span>Importaciones</span>
+            <span>Macarena</span>
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+
+                <li class="nav__item">
+                    <a href="/" class="nav__link">Inicio</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="/about" class="nav__link">Acerca de nosotros</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="/services" class="nav__link">Servicios</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="/contact" class="nav__link">Contactar</a>
+                </li>
+
+            </ul>
+
+            <div class="nav__close" id="nav-close">
+            <!-- close button -->
+                <i class="ri-close-line"></i>
+            </div>
+        </div>
+
+        <div class="nav__actions">
+            <!-- search button -->
+            <i class="ri-search-line nav__search" id="search-btn"></i>
+
+            <!-- login button -->
+            <i class="ri-user-line nav__login" id="login-btn"></i>
+
+            <!-- Toggle botton --> 
+            <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="search" id="search">
+    <form action="" class="search__form">
+            <i class="ri-search-line search__icon"></i>
+            <input type="text" placeholder="Que deseas buscar?" class="search__input" id="search">
+    </form>
+    <i class="ri-close-line search__close" id="search-close"></i>
+</div>
+
+<div class="login" id="login">
+    <form action="/validar" method="post" class="login__form">
+        <h2 class="login__title">Iniciar sesión</h2>
+        <h4>Solo para administradores</h4>
+        
+        <div class="login__group">
+            <div>
+                <label for="user" class="login__label">Nombre de usuario</label>
+                <input type="text" placeholder="Ingresa tu nombre de usuario" id="user" name="user" class="login__input">
+            </div>
+
+            <div>
+                <label for="password" class="login__label">Contraseña</label>
+                <input type="password" placeholder="Ingresa tu contraseña" id="password" name="password" class="login__input">
+            </div>
+        </div>
+        <button type="submit" class="login__button">Iniciar sesión</button>
+    </form>
+
+    <i class="ri-close-line login__close" id="login-close"></i>
+</div>

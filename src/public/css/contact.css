@@ -1,0 +1,48 @@
+.containersd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.95rem;
+    flex-direction: column;
+}
+.contact__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.icon__group {
+    margin-top: .86rem;
+    display: flex;
+    flex-direction: row;
+    row-gap: 40px;
+}
+
+.icon__item {
+    font-size: 2.7rem;
+    color: rgba(68, 68, 68, 0.85);
+    transition: all .5s;
+}
+
+.item__ws:hover {
+    color: rgb(43, 221, 43);
+}
+
+.item__fc:hover {
+    color: rgb(34, 125, 228);
+}
+
+.item__in:hover {
+    color: rgb(243, 82, 109);
+}
+
+.item__em:hover {
+    color: rgb(187, 52, 52);
+}
+
+.icon__text {
+    margin-top: .87rem;
+    width: 30rem;
+}

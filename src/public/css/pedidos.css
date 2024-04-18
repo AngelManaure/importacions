@@ -1,0 +1,102 @@
+.flex__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 280px) {
+    .pedido__group input {
+        width: 12rem;
+        margin: .4rem 1rem;
+    }
+}
+
+@media screen and (min-width: 540px) {
+    .pedido__group input {
+        margin-left: 4rem;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    .pedido__group input {
+        width: 20rem;
+    }
+}
+
+@media screen and (min-width:375px) {
+    .pedido__group input {
+        width: 20rem;
+    }
+}
+
+@media  screen and (min-width: 576px) {
+    
+    .pedido__form {
+        background-color: var(--container-color);
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        row-gap: .35rem;
+        gap: 1rem;
+    }
+
+    .pedido__group input {
+        width: 20rem;
+        background-color: var(--container-color);
+        border: 2px solid var(--border-color);
+        padding: 1rem;
+        color: var(--text-color);
+    }
+}
+
+@media  screen and (min-width: 768px) {
+    .pedido__form {
+        flex-direction: column;
+    }
+
+    .pedido__group input {
+        width: 20rem;
+    }
+}
+
+@media screen and (min-width: 853px) {
+    .pedido__form {
+        flex-direction: column;
+    }
+
+    .pedido__label {
+        width: 20rem;
+        padding: 0;
+        margin: .3rem 0;
+    }
+
+    .pedido__group {
+        margin-right: 0;
+    }
+
+    .pedido__button {
+        margin-left: 0;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .pedido__form {
+        flex-direction: row;
+    }
+
+    .pedido {
+        font-size: 1.4rem;
+    }
+    .pedido__title {
+        margin: 2rem 25%;
+    }
+
+    .pedido__button {
+        font-size: 1.4rem;
+        margin: auto 4rem;
+    }
+}

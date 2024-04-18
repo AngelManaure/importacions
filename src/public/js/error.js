@@ -1,0 +1,1 @@
+alert('Error al inciar sesión, comprueba los campos e intenta de nuevo')

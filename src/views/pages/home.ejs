@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración</title>
+    <%- include('../partials/admin/head.admin.ejs'); %>
+
+</head>
+<body>
+    <%- include('../partials/admin/header.admin.ejs'); %>
+
+    <div class="container">
+        <article class="instruccion">
+            <h3>Bienvenido al area de Administración</h3>
+            <p>
+                Aquí podrás revisar los pedidos, productos y clientes que tienes, asi como añadir,
+                actualizar o eliminar cualquiera de ellos.
+            </p>
+            <p>
+                Si necesitas ayuda, no dudes en contactarme: <a href="#" class="angel__manaure">Angel Manaure</a>
+            </p>
+            <p>
+                No he puesto instrucciones detalladas, ya que la interfaz es bastante simple y clara, dirigete
+                a la ruta que prefieras de la barra de navegación, dentro de ellas se explica los pasos a seguir
+                para administrar la empresa, aunque no se necesiten de ellos. <br>
+                El sistema se encarga del resto. ;) <br> <br>
+                Recuerda siempre cerrar sesión antes de terminar tu jornada.
+            </p>
+            <p>
+                La zona de administración solo es una plataforma para ayudarte a llevar a cabo la administración
+                de dicha empresa, y aunque usa la misma base de datos en la que se almacenan los pedidos, así como
+                la información de los clientes. NO se añaden datos como los productos que se muestran
+                en la página que ve el cliente, ya que esto no es posible sin la ayuda de un desarrollador, el
+                trabajo del administrador es simplemente guardar registro sobre todo lo que sucece en la empresa
+                relacionado a sus clientes, sus productos y su inventario. <br>
+                Ve al apartado de <a href="/home/help">Ayuda</a> si necesitas resolver alguna duda, normalmente 
+                deberías de tener un desarrollador a cargo del mantenimiento de la web, ese es un puesto
+                diferente del administrador aunque no dudo que alguien pueda hacer ambas. ;)
+            </p>
+
+            <small>Obte por una interfaz con colores oscuros, a diferencia de la página web, por el hecho
+                de que provablemente el adimistrador dure horas viendo ésta pantalla, y colores claros y luminosos
+                pueden entorpecer la vista con el tiempo.
+            </small>
+        </article>
+    </div>
+    
+
+    <%- include('../partials/admin/footer.admin.ejs'); %>
+</body>
+</html>
